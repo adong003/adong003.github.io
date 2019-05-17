@@ -1,0 +1,19 @@
+<input type="checkbox" id="ck">
+<label for="ck"></label>
+<style>
+    input{
+        display: none;
+    }
+    input + label{
+        cursor: pointer;
+        display: block;
+        width: 100px;
+        height: 100px;
+        xborder: 1px solid;
+        background-image: url(https://abs.twimg.com/a/1557861269/img/animations/web_heart_animation_edge.png);
+    }
+    input:checked + label{
+        background-position: -2800px 0;
+        transition: background-position .8s steps(28);
+    }
+</style>

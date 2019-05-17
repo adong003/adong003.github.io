@@ -1,0 +1,39 @@
+<input type="checkbox" id="ck">
+<label for="ck"></label>
+<div></div>
+<style>
+    input{
+        display: none;
+    }
+    input + label{
+      cursor: pointer;
+        display: block;
+        width:300px;
+        height: 100px;
+        xborder:1.2px ;
+        border-radius: 60px;
+        position: absolute;
+        background-color:rgb(221,221,221)
+    }
+    div {
+        width:90px;
+  height:90px;
+  xborder:1px ;
+  border-radius:45px;
+  position: absolute;
+  top:13px;
+  left:12px;
+  background-color:rgb(255,255,255)
+}
+input:checked + label{
+  background-color:rgb(110,221,94);
+}
+input:checked ~ div{
+  position: absolute;
+  left:200px;
+  transition:1s;
+}
+input:not(checked) ~ div{
+ transition:0.8s;
+}
+</style>

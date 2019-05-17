@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>文件（F）
+        <ul>
+          <li>新建文件</li>
+          <li>新建窗口</li>
+          <li>打开文件</li>
+          <li>保存
+            <ul>
+              <li>html</li>
+              <li>md</li>
+              <li>text</li>
+            </ul>
+          </li>
+          <li>另存为...</li>
+          <li>退出</li>
+        </ul>
+      </li>
+      <li>编辑（E）
+        <ul>
+          <li>撤销</li>
+          <li>恢复</li>
+          <li>剪切</li>
+          <li>复制</li>
+          <li>粘贴</li>
+        </ul>
+      </li>
+      <li>选择（S）
+        <ul>
+          <li>全选</li>
+        </ul>
+      </li>
+      <li>查看（V）
+        <ul>
+          <li>命令面板</li>
+          <li>打开视图</li>
+          <li>外观
+            <ul>
+              <li>切换全屏</li>
+              <li>切换禅模式</li>
+              <li>切换居中布局</li>
+              <li>切换菜单栏</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+<style>
+    ul{
+  padding:0;
+  list-style-type:none;
+  background-color:pink;
+  width:100px;
+}
+ul ul{
+  xdisplay:none;
+  position: absolute;
+  top:0;
+  left:100%;
+}
+ul ul li{
+  display:none;
+}
+ul li{
+  width:100px;
+  position: relative;
+}
+li:hover{
+  background-color: orange;
+}
+li:hover > ul > li{
+  display:block;
+}
+ul ul::before{
+  content:'>';
+  position: absolute;
+  left:-20px;
+}
+</style>
+</html>
